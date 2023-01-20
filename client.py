@@ -84,9 +84,7 @@ def main():
     while run:
         clock.tick(60)
         try:
-            print("before n.send get")
             game = n.send("get")
-            print("print game", game)
         except:
             run = False
             print(bc.FAIL + "Couldn't get game." + bc.END)
